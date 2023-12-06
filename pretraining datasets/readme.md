@@ -1,7 +1,9 @@
 ## pretraining datasets
 Due to upload size limitations, we are unable to upload all the pretraining data (~200G) here.
 
-ALL the pretraining data will be open source in a non-anonymized manner after the double blind review procedure.
+All the pretraining data will be open source at https://pan.baidu.com/s/11klozQG0UAawM_0TU8UdUw?pwd=gz11 
+
+password：gz11 
 
 Instead, you can re-preprocess the pretraining data by the following steps:
 
