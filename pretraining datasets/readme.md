@@ -62,7 +62,7 @@ x1, x2, y1, y2 = shapes[sub][1]
 cropped_img = ori_img[x1:x2, y1:y2, :]
 arr2nii(cropped_img, nii, tar_nii_path)
  ```
-This step is optional. Please note the we have conduct this operation on the provided data in Baidu Netdisk. 
+This step is optional. Please note we have conducted this operation on the provided data in Baidu Netdisk. 
 
 ### (4) Generate the hessian and coarse_gt
 
