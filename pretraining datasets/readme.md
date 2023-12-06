@@ -1,7 +1,7 @@
 ## pretraining datasets
 Due to upload size limitations, we are unable to upload all the pretraining data (~200G) here.
 
-All the pretraining data will be open source at https://pan.baidu.com/s/11klozQG0UAawM_0TU8UdUw?pwd=gz11 
+All the preprocessed pretraining data (coarse segmentation and vessel-enhanced images in .npy format) have been open source at https://pan.baidu.com/s/11klozQG0UAawM_0TU8UdUw?pwd=gz11 
 
 password：gz11 
 
