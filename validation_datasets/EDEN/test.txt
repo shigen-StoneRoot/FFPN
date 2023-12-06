@@ -1,0 +1,3 @@
+CTRL_4871_s3DI_MC_HR.nii.gz
+CTRL_0866_s3DI_MC_HR.nii.gz
+CTRL_5960_s3DI_MC_HR.nii.gz
