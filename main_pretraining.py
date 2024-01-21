@@ -36,7 +36,7 @@ parser.add_argument('--dataset', type=str, default='IXI')
 
 
 parser.add_argument('--image_size', type=tuple, default=(160, 160, 64))
-parser.add_argument('--patch_size', type=tuple, default=(16, 16, 16))       # 7*7*4=196
+parser.add_argument('--patch_size', type=tuple, default=(16, 16, 16))    
 parser.add_argument('--out_channels', type=int, default=2)
 
 parser.add_argument('--feature_size', type=int, default=24)
@@ -110,7 +110,7 @@ def init_dataloader(args):
 
 
 def init_model_optimizer(args):
-    model = PreVesselFormer()
+    model = PreVesselFormer(args.image_size, 1, 2)
 
     optimizer = optim.AdamW(model.parameters(), lr=args.lr, betas=(0.9, 0.999), weight_decay=args.weight_decay)
 
