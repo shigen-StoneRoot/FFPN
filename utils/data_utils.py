@@ -40,8 +40,8 @@ def load_pretraining_train_val_datasets(dataset_names, train_transform, val_tran
         train_datasets_list.extend(cur_ds_train_list)
         val_datasets_list.extend(cur_ds_val_list)
 
-    train_dataset = data.Dataset(data=train_dataset_list, transform=train_transform)
-    test_dataset = data.Dataset(data=val_dataset_list, transform=val_transform)
+    train_dataset = data.Dataset(data=train_datasets_list, transform=train_transform)
+    test_dataset = data.Dataset(data=val_datasets_list, transform=val_transform)
 
     return train_dataset, test_dataset
 
