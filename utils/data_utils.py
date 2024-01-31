@@ -30,11 +30,11 @@ def load_pretraining_train_val_datasets(dataset_names, train_transform, val_tran
         cur_ds_val_subs = cur_ds_sub_list[int(train_size * len(cur_ds_sub_list)):]
 
         cur_ds_train_list = [{'image': os.path.join(cur_ds_img_dir, sub),
-                              'hessian': os.path.join(cur_ds_gt_dir, sub),
+                              'hessian': os.path.join(cur_ds_hs_dir, sub),
                               'label': os.path.join(cur_ds_gt_dir, sub)} for sub in cur_ds_train_subs]
 
         cur_ds_val_list = [{'image': os.path.join(cur_ds_img_dir, sub),
-                            'hessian': os.path.join(cur_ds_gt_dir, sub),
+                            'hessian': os.path.join(cur_ds_hs_dir, sub),
                             'label': os.path.join(cur_ds_gt_dir, sub)} for sub in cur_ds_val_subs]
 
         train_datasets_list.extend(cur_ds_train_list)
