@@ -7,6 +7,7 @@ from monai.transforms import Activations, AsDiscrete, Compose
 from monai.transforms import RandRotate
 import numpy as np
 import random
+from monai.losses import DiceCELoss
 from torch import optim
 from functools import partial
 from models import PreVesselFormer
@@ -141,7 +142,8 @@ def run(args):
 
     it = 0
     end_flag = False
-
+    loss_func = DiceCELoss(to_onehot_y=True, softmax=True,
+                           squared_pred=True, smooth_nr=0.0, smooth_dr=1e-6)
     for epoch in range(10000000000):
         model.train()
         train_loss = 0.0
