@@ -162,7 +162,7 @@ def run(args):
             l_seg = [loss_func(features[i], label) * ds_weight[i] for i in range(5)]
             l_seg = sum(l_seg)
 
-            l_rgn = F.l1_loss(logits_rgn, regression_tar)
+            l_rgn = F.l1_loss(logits_rgn, hessian)
 
             ori_imgs_mip = torch.max(imgs * features[0], dim=4, keepdim=True)[0]
             logits_rgn_mip = torch.max(logits_rgn * features[0], dim=4, keepdim=True)[0]
@@ -200,7 +200,7 @@ def run(args):
                     features, logits_rgn = model(img)
                     l_seg = [loss_func(features[i], label) * ds_weight[i] for i in range(5)]
                     l_seg = sum(l_seg)
-                    l_rgn = F.l1_loss(logits_rgn, regression_tar)
+                    l_rgn = F.l1_loss(logits_rgn, hessian)
                     ori_imgs_mip = torch.max(imgs * features[0], dim=4, keepdim=True)[0]
                     logits_rgn_mip = torch.max(logits_rgn * features[0], dim=4, keepdim=True)[0]
                     l_mip_consistency = F.l1_loss(logits_rgn_mip, ori_imgs_mip, reduction='none')
