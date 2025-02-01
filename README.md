@@ -1,5 +1,18 @@
 # FFPN Repository
 
+## Reference
+If you take advantage of the data and paper in your research, please cite the following in your manuscript:
+
+```
+@article{shi2025benefit,
+  title={Benefit from public unlabeled data: A Frangi filter-based pretraining network for 3D cerebrovascular segmentation},
+  author={Shi, Gen and Lu, Hao and Hui, Hui and Tian, Jie},
+  journal={Medical Image Analysis},
+  pages={103442},
+  year={2025},
+  publisher={Elsevier}
+}
+```
 
 The whole data will be open source by Baidu Netdisk.
 
@@ -21,18 +34,6 @@ monai==1.1.0
 After the dataset preprocessing, you can run the command to conduct the pretraining procedure:
 ```
 python main_pretraining.py
-```
-
-## Reference
-If you take advantage of the data and paper in your research, please cite the following in your manuscript:
-
-```
-@article{shi2023benefit,
-  title={Benefit from public unlabeled data: A Frangi filtering-based pretraining network for 3D cerebrovascular segmentation},
-  author={Shi, Gen and Lu, Hao and Hui, Hui and Tian, Jie},
-  journal={arXiv preprint arXiv:2312.15273},
-  year={2023}
-}
 ```
 
 If you have any problem, please email me with this address: shigen@buaa.edu.cn
