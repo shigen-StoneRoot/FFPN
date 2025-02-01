@@ -4,13 +4,15 @@
 If you take advantage of the data and paper in your research, please cite the following in your manuscript:
 
 ```
-@article{shi2025benefit,
-  title={Benefit from public unlabeled data: A Frangi filter-based pretraining network for 3D cerebrovascular segmentation},
-  author={Shi, Gen and Lu, Hao and Hui, Hui and Tian, Jie},
-  journal={Medical Image Analysis},
-  pages={103442},
-  year={2025},
-  publisher={Elsevier}
+@article{SHI2025103442,
+title = {Benefit from public unlabeled data: A Frangi filter-based pretraining network for 3D cerebrovascular segmentation},
+journal = {Medical Image Analysis},
+volume = {101},
+pages = {103442},
+year = {2025},
+issn = {1361-8415},
+doi = {https://doi.org/10.1016/j.media.2024.103442},
+author = {Gen Shi and Hao Lu and Hui Hui and Jie Tian},
 }
 ```
 
