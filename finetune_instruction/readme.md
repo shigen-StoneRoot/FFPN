@@ -1,10 +1,12 @@
 ## VesselFormer Fine-tuning on nnUNet v1
 
-Our fine-tuning is based on the **nnUNet v1** framework. For environment setup and basic usage of nnUNet, please refer to the repos: 
-
-[https://github.com/zfdong-code/MNet](https://github.com/zfdong-code/MNet)
+Our fine-tuning is based on the **nnUNet v1** framework. For environment setup and basic usage of nnUNet, please refer to the repo: 
 
 [https://github.com/MIC-DKFZ/nnUNet](https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1)
+
+For details on training your model with the **nnUNet v1** framework, please refer to the following repo:
+
+[https://github.com/zfdong-code/MNet](https://github.com/zfdong-code/MNet)
 
 ### Step-by-step Instructions
 
