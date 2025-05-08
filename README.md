@@ -38,4 +38,10 @@ After the dataset preprocessing, you can run the command to conduct the pretrain
 python main_pretraining.py
 ```
 
+## Pretraining Checkpoint
+
+You can download the pretraining checkpoint at:
+
+https://drive.google.com/file/d/1p6fHnP_bXuMjHcDBLqbDpCuKZG8-Osmk/view?usp=sharing
+
 If you have any problem, please email me with this address: shigen@buaa.edu.cn
