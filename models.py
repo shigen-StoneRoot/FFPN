@@ -90,12 +90,14 @@ class PatchEmbedCNN(nn.Module):
 class DeepSupervisionOut(nn.Module):
     def __init__(self, dim, num_class, patch_size):
         super().__init__()
-        self.up = nn.Sequential(nn.Conv3d(dim, num_class, kernel_size=1),
-                                nn.Upsample(scale_factor=patch_size, mode='trilinear', align_corners=False))
+        # self.up = nn.Sequential(nn.Conv3d(dim, num_class, kernel_size=1),
+        #                         nn.Upsample(scale_factor=patch_size, mode='trilinear', align_corners=False))
+        self.up = nn.Conv3d(dim, num_class, kernel_size=1)
+        self.patch_size = patch_size
 
     def forward(self, x):
         x = self.up(x)
-
+        x = F.interpolate(x, scale_factor=self.patch_size, mode='trilinear', align_corners=False)
         return x
 
 
