@@ -66,7 +66,8 @@ This step is optional. Please note we have conducted this operation on the provi
 
 ### (4) Generate the hessian and coarse_gt
 
-You have to modify the path in coarse_label.m file and run this file.
+You have to modify the path in coarse_label.m file and run this file. After execution, please normalize the Hessian image to the range [0, 1], and binarize the coarse_gt data by setting all non-zero elements to 1.
+
 
 
 After the preprocessing, all datasets should have the same file structure:
